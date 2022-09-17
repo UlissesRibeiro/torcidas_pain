@@ -20,7 +20,7 @@ body {
   }
 
   #theme {
-    width: 100vw;
+    /*width: 100vw;*/
     height: 100vh;
   }
   
@@ -142,10 +142,10 @@ padding-top: 5px;
 display: none;
 
 }
-#StreamersPB img{
+/*#StreamersPB img{
   width: 600px;
   height: 300px;
-}
+}*/
 
 /* CLASSES */
 #projt1{
