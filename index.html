@@ -46,7 +46,12 @@
                   <a class="nav-link" href="#">Os Tradicionais</a>
                 </li>
                 <li class="nav-item">
-                  <button id="toggle-btn" class="dark-mode-toggle btn"><i class="bi bi-brightness-high"></i></button>
+                  <!-- Rounded switch -->
+<label class="switch">
+  <input type="checkbox" id="toggle-btn" class="dark-mode-toggle btn">
+  <span class="slider round"></span>
+</label>
+                  <!--<button id="toggle-btn" class="dark-mode-toggle btn"><i class="bi bi-brightness-high"></i></button>-->
                 </li>
               </ul>
             </div>
@@ -91,7 +96,7 @@
 
                   <!-- seção sobre mim -->
 <section id="about">
-  <div class="container">
+  <div class="container" style="">
       <div class="px-4 py-5 my-5 text-center">
           <h1>As torcidas organizadas mais tradicionais do Brasil!</h1>
           <div class="container marketing" style="margin-top:50px;">
@@ -101,35 +106,54 @@
                 <img src="/media/img/crias.webp" style="width: 35%;border-radius:50%;border-style: solid;border-color: white;" alt="" srcset="">
         
                 <h2 class="fw-normal">Crias da P</h2>
-                <p>A tradição fez quem somos! | EXQUEÇA TUDO ❌ 🙅🏻‍♂️</p>
+                <!--<p>A tradição fez quem somos! | EXQUEÇA TUDO ❌ 🙅🏻‍♂️</p>-->
                 <div class="container justify-content-center d-flex">          
                   <ul class="nav col-md-4 justify-content-center d-flex">
                   <li class="ms-3"><a class="text-muted" target="_blank" href="https://twitter.com/CriasdaP"><i class="bi bi-twitter"></i></a></li>
                   <!--<li class="ms-3"><a class="text-muted" target="_blank" href="#"><i class="bi bi-instagram"></i></a></li>-->
                 </ul>
+              </div>    
+
+            <div class="card-body justify-content-center d-flex" style="background-color: rgb(92, 92, 92);"  id="pubg_mobilde">
+                <button class="btn " style="color:white ;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Sobre a Torcida<i class="bi bi-arrow-right"></i></button>
+                <!--<img src="media/img/line_pubg.webp" alt="" srcset="">-->
               </div>
  
               </div><!-- /.col-lg-4 -->
               <div class="col-lg-4">
                 <img src="/media/img/herdeiras.webp" style="width: 35%;border-radius:50%;border-style: solid;border-color: white;" alt="" srcset="">
                 <h2 class="fw-normal">Herdeiras da Tradição</h2>
-                <p>A primeira torcida organizada feminina da organização mais tradicional do Brasil!</p>
+                <!--<p>Torcida organizada feminina da organização mais tradicional do Brasil!</p>-->
                 <div class="container justify-content-center d-flex">          
                   <ul class="nav col-md-4 justify-content-center d-flex">
                   <li class="ms-3"><a class="text-muted" target="_blank" href="https://twitter.com/PNGHerdeiras"><i class="bi bi-twitter"></i></a></li>
                   <li class="ms-3"><a class="text-muted" target="_blank" href="https://www.instagram.com/herdeirasdatradicao/"><i class="bi bi-instagram"></i></a></li>
                 </ul>
               </div>
+              <div class="card-body justify-content-center d-flex" style="background-color: rgb(92, 92, 92);"  id="pubg_mobilde">
+                <button class="btn " style="color:white ;" data-bs-toggle="modal" data-bs-target="#modalHerdeiras"> Sobre a Torcida<i class="bi bi-arrow-right"></i></button>
+                <!--<img src="media/img/line_pubg.webp" alt="" srcset="">-->
+              </div>
+ 
               </div><!-- /.col-lg-4 -->
+
+
+
+
+
               <div class="col-lg-4">
                 <img src="/media/img/tradicionais.webp" style="width: 35%;border-radius:50%;border-style: solid;border-color: white;" alt="" srcset="">
-                <h2 class="fw-normal">Tradicionais</h2>
-                <p>Fundada em 2018, somos a primeira torcida organizada nos Esports!</p>
+                <h2 class="fw-normal">Os Tradicionais</h2>
+                <!--<p>Fundada em 2018, somos a primeira torcida organizada nos Esports!</p>-->
                 <div class="container justify-content-center d-flex">          
                   <ul class="nav col-md-4 justify-content-center d-flex">
                   <li class="ms-3"><a class="text-muted" target="_blank" href="https://twitter.com/Os_tradicionais"><i class="bi bi-twitter"></i></a></li>
                   <li class="ms-3"><a class="text-muted" target="_blank" href="https://www.instagram.com/torcidaostradicionais/"><i class="bi bi-instagram"></i></a></li>
                 </ul>
+              </div>
+              <div class="card-body justify-content-center d-flex" style="background-color: rgb(92, 92, 92);"  id="pubg_mobilde">
+                <button class="btn " style="color:white ;" data-bs-toggle="modal" data-bs-target="#modalTradiconais"> Sobre a Torcida<i class="bi bi-arrow-right"></i></button>
+                <!--<img src="media/img/line_pubg.webp" alt="" srcset="">-->
               </div>
               </div><!-- /.col-lg-4 -->
             </div><!-- /.row -->
@@ -141,7 +165,79 @@
   </div>
 </section>
           
-                  
+              <!-- MODAIS -->
+              <!-- Button trigger modal -->
+
+<!--<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Sobre a torcida <i class="bi bi-arrow-right"></i>
+</button>-->
+
+<!-- Modal Crias da P -->
+<div class="modal fade modal-dialog modal-dialog-centered modal-dialog-scrollable" id="staticBackdropss" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Sobre a Crias da P</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="text-align: left;">
+        A ideia surgiu no dia 11/06 na primeira partida do 2º split,
+        estávamos eu e o co-founder (Chocolate) no BK conversando sobre algumas coisas relacionadas a paiN,
+        estávamos se sentindo excluídos das demais torcidas e decidimos montar a nossa enquanto tomávamos 
+        um potão de sorvete, a ideia surgiu da nossa loucura e construímos esse projeto em menos de 1 hora,
+         decidimos o nome e então iniciamos nosso projeto quase 2 semanas depois, buscamos estar sempre 
+         unindo a torcida e com o objetivo de movimentar o cenário, não só torcendo pela paiN mas melhorando
+          e buscando benefícios para a torcida seja em stage, eventos, ou até nessas “férias” de cblol dar
+          um entretenimento a todos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-bs-dismiss="modal"><i class="bi bi-x-square-fill"></i></button>
+        <!--<button type="button" class="btn btn-primary">Understood</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Os Tradicionais -->
+<div class="modal fade modal-dialog modal-dialog-centered modal-dialog-scrollable" id="modalTradiconaisss" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Sobre Os Tradicionais</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="text-align: left;">
+        Começou na época do MSI 2017, onde o campeonato foi aqui no Brasil. Fui no jogo do play in que foi aqui em SP, e durante os jogos sentia a falta da galera cantando e da festa.
+        E oque me confirmou mais dessa falta foi quando o narrador (schaeppi acreditou eu) disse do calor da torcida brasileira, mas sabia que podia ser melhor.
+        Nesse período já torcia pra nossa paiN e após o MSI, já comecei a planejar e estudar as torcidas do mundo  e no começo de 2018 à construir as mídias sociais da torcida
+        Os Tradicionais. O nome veio pela Tradição que nossa paiN tem no cenário, e sempre estar no topo e de ter sua torcida.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-bs-dismiss="modal"><i class="bi bi-x-square-fill"></i></button>
+        <!--<button type="button" class="btn btn-primary">Understood</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Herdeiras -->
+<div class="modal fade modal-dialog modal-dialog-centered modal-dialog-scrollable" id="modalHerdeirasss" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Sobre Herdeiras da Tradição</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="text-align: left;">
+        A primeira torcida organizada feminina da organização mais tradicional do Brasil
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-bs-dismiss="modal"><i class="bi bi-x-square-fill"></i></button>
+        <!--<button type="button" class="btn btn-primary">Understood</button>-->
+      </div>
+    </div>
+  </div>
+</div>
 
             <!-- Inicio rodapé -->
     <section>
