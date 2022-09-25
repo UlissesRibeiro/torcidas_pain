@@ -1,8 +1,16 @@
 body {
-    /*font-family: sans-serif;
-    margin: 0;*/
+    /*font-family: sans-serif;*/
+    margin: 0
   }
-  
+h1,h2{
+  color: white;
+}
+
+/* campo de alteração das class bi*/
+.bi{
+  font-size: 25px;
+}
+/* campo de alteração das class bi*/
   /*#toggle-btn {
     padding: 0.5em;
     font-weight: 800;
@@ -15,18 +23,30 @@ body {
 
   /* dark mode */
   .dark-mode-toggle {
-    /*background: #000;*/
-    color: #fff;
+    /*background: #000;
+    color: #fff;*/
+  }
+
+  .btn{
+    background-color: #000;
+    border-color: white;
+    color: white;
+  }
+  .btn:hover{
+    background-color: darkred;
+    border-color: white;
+    color: white;
   }
 
   #theme {
     /*width: 100vw;*/
     height: 100vh;
+    background-color: #000;
   }
   
   .dark-mode-theme {
-    background: #000;
-    color: #fff;
+    background:;
+    color: ;
   }
 
   /* The switch - the box around the slider */
@@ -44,7 +64,9 @@ body {
   height: 0;
 }
 
-/* The slider */
+
+
+/* The slider 
 .slider {
   position: absolute;
   cursor: pointer;
@@ -83,14 +105,14 @@ input:checked + .slider:before {
   transform: translateX(-26px);
 }
 
-/* Rounded sliders */
+/* Rounded sliders 
 .slider.round {
   border-radius: 34px;
 }
 
 .slider.round:before {
   border-radius: 50%;
-}
+}*/
 /* dark mode fim */
 
 #main{
@@ -102,12 +124,7 @@ margin-top: 50px;
   margin-bottom: 200px;
 }
 
-#ulisses{
-  border-radius: 50%;
-  width: 60%;
-  /*border-style: solid;
-  border-color: red;*/
-}
+
 
 #About{
   font-size: 16px;
@@ -127,12 +144,12 @@ margin-top: 50px;
     top:0;
     left: 0;
     height: 100%;
-    width: 100%;
+    width: cover;
   }
   .video-wrapper {
     border: 2px solid rgb(255, 255, 255);
     border-radius: 50px;
-    width: 100%;
+    width: 846px;
     height: 480px;
     position: relative;
     top: 150px;
@@ -239,7 +256,11 @@ display: none;
   }
 /* css responsivo provisorio */
 @media(max-width: 450px){
-
+/* campo de alteração das class bi*/
+.bi{
+  font-size: 25px;
+}
+/* campo de alteração das class bi*/
   #main-banner{
       height: auto;
       width: auto;
@@ -299,6 +320,11 @@ display: none;
 
   
   @media screen and (max-width: 580px) {
+    /* campo de alteração das class bi*/
+.bi{
+  font-size: 25px;
+}
+/* campo de alteração das class bi*/
     #navbar {
       padding: 20px 10px !important;
     }

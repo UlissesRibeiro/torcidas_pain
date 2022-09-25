@@ -26,3 +26,4 @@ toggleBtn.addEventListener("click", (e) => {
     disableDarkMode();
   }
 });
+
